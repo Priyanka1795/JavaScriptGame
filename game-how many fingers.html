@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Javascript</title>
+	</head>
+	<body>
+		<p>How many fingers am I holding up ?</p>
+		<p>Enter any number between 1 and 5!!!</p>
+		<p><input id="enteredText" type="text">
+		<button id="button one">guess!</button></p>
+
+		<script type="text/javascript">
+		
+			var answer = Math.floor(Math.random() * 6);
+			var guessedWord = document.getElementById("enteredText").value;
+			document.getElementById("button one").onclick = function() {
+			
+			if(guessedWord == answer) {
+				alert("You got it right!");
+			} else {
+				alert("Nope! the number was "+answer);
+			}
+
+		}
+
+		</script>
+	</body>
+</html>
